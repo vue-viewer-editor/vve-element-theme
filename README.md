@@ -6,7 +6,7 @@ vve element theme
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 ## 目前主题有
-- vve-theme-element-00A1B7
+- vve-te-00A1B7
 
 ## element ui主题
 -如果需要新增element主题，配合[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)制作主题
@@ -32,7 +32,8 @@ import 'vve-element-theme/src/element-00A1B7/main.scss'
 
 之后应用样式
 ```html
-<div class="vve-theme-element-00A1B7"></div>
+<!-- vve-te-00A1B7 是 vve-theme-element-00A1B7 的简写-->
+<div class="vve-te-00A1B7"></div>
 ```
 
 ### CDN安装使用
@@ -40,7 +41,8 @@ import 'vve-element-theme/src/element-00A1B7/main.scss'
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vve-element-theme@1.0.1/dist/element-00A1B7.css">
 
-<div class="vve-theme-element-00A1B7"></div>
+<!-- vve-te-00A1B7 是 vve-theme-element-00A1B7 的简写-->
+<div class="vve-te-00A1B7"></div>
 ```
 
 ## 开发
