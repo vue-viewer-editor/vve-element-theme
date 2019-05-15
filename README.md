@@ -1,16 +1,33 @@
-WEBPACK-CSS
+vve element theme
 
-> 使用 webpack 打包 css
+> vve支持的 element 主题
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
-> [English Document](./README_EN.md)
+## 目前主题有
+- vve-theme-element-00A1B7
 
-## 特性
-- webpack4
-- babel7
-- dart-sass
+## element ui主题
+如果需要新增element主题，配合[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)制作主题
+
+## 安装
+
+安装npm包
+
+```bash
+npm install vve-element-theme
+```
+
+引入样式
+```bash
+import 'vve-element-theme/dist/element-00A1B7.css'
+```
+
+如果你的项目支持sass，你可以直接引用
+```bash
+import 'vve-element-theme/src/element-00A1B7/index.scss'
+```
 
 ## 开发
 
@@ -38,8 +55,3 @@ npm run build
 npm run release
 git push --follow-tags origin master && npm publish
 ```
-
-## 捐赠
-如果你觉得它有用，你可以给我买一杯奶茶。
-
-<img width="650" src="https://raw.githubusercontent.com/nqdy666/webpack-css/master/qrcode-donation.png" alt="donation">
