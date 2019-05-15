@@ -13,7 +13,7 @@ vve element theme
 
 ## 安装
 
-安装npm包
+### npm安装使用
 
 ```bash
 npm install vve-element-theme
@@ -26,7 +26,20 @@ import 'vve-element-theme/dist/element-00A1B7.css'
 
 如果你的项目支持sass，你可以直接引用
 ```bash
-import 'vve-element-theme/src/element-00A1B7/index.scss'
+import 'vve-element-theme/src/element-00A1B7/main.scss'
+```
+
+之后应用样式
+```html
+<div class="vve-theme-element-00A1B7"></div>
+```
+
+### CDN安装使用
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vve-element-theme@1.0.1/dist/element-00A1B7.css">
+
+<div class="vve-theme-element-00A1B7"></div>
 ```
 
 ## 开发
