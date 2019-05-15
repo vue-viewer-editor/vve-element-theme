@@ -9,7 +9,8 @@ vve element theme
 - vve-theme-element-00A1B7
 
 ## element ui主题
-如果需要新增element主题，配合[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)制作主题
+-如果需要新增element主题，配合[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)制作主题
+-删除 除index.css其他文件，并修改index.css文件名为index.scss，添加main.scss，main.js，参考element-00A1B7目录
 
 ## 安装
 
