@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     'element-00A1B7': path.resolve(__dirname, "src/element-00A1B7/main.js"),
+    'element-2b4660': path.resolve(__dirname, "src/element-2b4660/main.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -47,7 +48,14 @@ module.exports = {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {}
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 20000,
+        }
+      },
     ]
   }
 };
