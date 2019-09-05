@@ -2,8 +2,8 @@
   "name": "vve-element-theme",
   "version": "1.0.3",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack -p",
+    "start": "webpack-dev-server --open --mode development --env.NODE_ENV=development",
+    "build": "webpack -p --env.NODE_ENV=production",
     "release": "npm run build && standard-version"
   },
   "files": [
