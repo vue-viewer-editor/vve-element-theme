@@ -62,6 +62,8 @@ module.exports = (env = {}) => {
             }
           ],
         },
+        // Nested @font-face results in invalid syntax
+        // https://github.com/sass/sass/issues/1251
         {
           test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
           loader: 'url-loader',
