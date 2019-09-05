@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env = {}) => {
 
@@ -29,6 +30,7 @@ module.exports = (env = {}) => {
       publicPath: ""
     },
     plugins: [
+      ...(env.NODE_ENV === 'production' ? [new CleanWebpackPlugin()] : []),
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
