@@ -9,6 +9,10 @@ module.exports = (env = {}) => {
     'element-rj-ivg': path.resolve(__dirname, "src/element-rj-ivg/main.js"),
   }
 
+  env.SINGLE_ENTRY && Object.keys(entry).map(name => {
+    if (name !== env.SINGLE_ENTRY) delete entry[name]
+  })
+
   const multiHtmlPlugins = (env.NODE_ENV === 'production') ? [] : Object.keys(entry).map((name, index) => {
     return new HtmlWebpackPlugin({
       chunks: [name],

@@ -56,7 +56,11 @@ npm install
 - 开发
 
 ```bash
-npm run dev
+npm start
+```
+- 当个主题查看
+```
+npm start -- --env.SINGLE_ENTRY=element-rj-ivg
 ```
 
 - 打包
