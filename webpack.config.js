@@ -8,6 +8,10 @@ module.exports = (env = {}) => {
   const entry = {
     'element-00A1B7': path.resolve(__dirname, "src/element-00A1B7/main.js"),
     'element-rj-ivg': path.resolve(__dirname, "src/element-rj-ivg/main.js"),
+    'element-rj-00aeff': path.resolve(__dirname, "src/rj-themes/00aeff.js"),
+    'element-rj-12c2ab': path.resolve(__dirname, "src/rj-themes/12c2ab.js"),
+    'element-rj-0090ff': path.resolve(__dirname, "src/rj-themes/0090ff.js"),
+    'element-rj-232a45': path.resolve(__dirname, "src/rj-themes/232a45.js"),
   }
 
   env.SINGLE_ENTRY && Object.keys(entry).map(name => {

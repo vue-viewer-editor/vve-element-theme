@@ -1,0 +1,38 @@
+@mixin rjScroll(
+	$bar-cl,
+	$bar-track-shadow,
+	$bar-track-bg,
+	$bar-thumb-bg,
+	$bar-thumb-shadow,
+	$bar-btn,
+	$bar-corner
+) {
+	// chome浏览器滚动条
+	// 滚轮样式定义
+	*::-webkit-scrollbar {
+	    width: 6px;
+	    height: 6px;
+	    background-color: $bar-cl;
+	}
+	// 滚动条的轨道
+	*::-webkit-scrollbar-track{
+	    box-shadow: inset 0 0 5px $bar-track-shadow;
+	    background-color: $bar-track-bg;
+	}
+
+	// 滚动条的滑块按钮
+	*::-webkit-scrollbar-thumb{
+	    border-radius: 10px;
+	    background-color: $bar-thumb-bg;
+	    box-shadow: inset 0 0 3px $bar-thumb-shadow;
+	}
+	// 滚动条的上下两端的按钮
+	*::-webkit-scrollbar-button{
+	    //background-color: $bar-btn;
+	}
+	//边角
+	*::-webkit-scrollbar-corner {
+		//background-color: $bar-corner;
+	}
+}
+

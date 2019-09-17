@@ -1,0 +1,196 @@
+@mixin rjIcon(
+	$icon-pic,
+	$rj-def-cl,
+	$rj-unlight-cl,
+	$rj-hover-cl
+	) {
+	//图标
+	span.rj-icon {
+		color:$rj-def-cl!important;
+		cursor:pointer;
+		i {
+			padding: 0px 7px;
+			background:url('../img/' + $icon-pic) 0 0 no-repeat;
+		}
+		&.--edit {
+			&:after{content:'编辑'}
+			i {background-position: 0px -1.5px;}
+			&:hover {
+				i {background-position: 0px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position: 0px -1.5px;}}
+		}
+		&.--del {
+			&:after{content:'删除'}
+			i {background-position: -28px -1.5px;}
+			&:hover {
+				i {background-position: -28px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-28px -1.5px;}}
+
+		}
+		&.--detail {
+			&:after{content:'详情'}
+			i {background-position: -58px -1.5px;}
+			&:hover {
+				i {background-position: -58px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-58px -1.5px;}}
+		}
+		&.--export {
+			&:after{content:'导出'}
+			i {background-position: -88px -1.5px;}
+			&:hover {
+				i {background-position: -88px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-88px -1.5px;}}
+		}
+		&.--pwd {
+			&:after{content:'密码'}
+			i {background-position: -118px -1.5px;}
+			&:hover {
+				i {background-position: -118px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-118px -1.5px;}}
+		}
+		&.--account {
+			&:after{content:'账号'}
+			i {background-position: -148px -1.5px;}
+			&:hover {
+				i {background-position: -148px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-148px -1.5px;}}
+		}
+		&.--loginout {
+			&:after{content:'退出'}
+			i {background-position: -178px -1.5px;}
+			&:hover {
+				i {background-position: -178px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-178px -1.5px;}}
+		}
+		&.--data {
+			&:after{content:'资料'}
+			i {background-position: -208px -1.5px;}
+			&:hover {
+				i {background-position: -208px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-208px -1.5px;}}
+		}
+		&.--customer  {
+			&:after{content:'客服'}
+			i {background-position: -238px -1.5px;}
+			&:hover {
+				i {background-position: -238px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-238px -1.5px;}}
+		}
+		&.--add  {
+			&:after{content:'添加'}
+			i {background-position: -268px -1.5px;}
+			&:hover {
+				i {background-position: -268px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-268px -1.5px;}}
+		}
+		&.--upgrade {
+			&:after{content:'升级'}
+			i {background-position: -298px -1.5px;}
+			&:hover {
+				i {background-position: -298px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-298px -1.5px;}}
+		}
+		&.--download  {
+			&:after{content:'下载'}
+			i {background-position: -328px -1.5px;}
+			&:hover {
+				i {background-position: -328px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-328px -1.5px;}}
+		}
+		&.--upload   {
+			&:after{content:'上传'}
+			i {background-position: -360px -1.5px;}
+			&:hover {
+				i {background-position: -360px -24.5px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-360px -1.5px;}}
+		}
+		&.--his  {
+			&:after{content:'历史'}
+			i {background-position: -0px -48px;}
+			&:hover {
+				i {background-position: -0px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-0px -48px;}}
+		}
+		&.--time  {
+			&:after{content:'时间'}
+			i {background-position: -30px -48px;}
+			&:hover {
+				i {background-position: -30px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-30px -48px;}}
+		}
+		&.--power  {
+			&:after{content:'电源'}
+			i {background-position: -60px -48px;}
+			&:hover {
+				i {background-position: -60px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-60px -48px;}}
+		}
+		&.--msg  {
+			&:after{content:'消息'}
+			i {background-position: -90px -48px;}
+			&:hover {
+				i {background-position: -90px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-90px -48px;}}
+		}
+		&.--maparea  {
+			&:after{content:'区域'}
+			i {background-position: -120px -48px;}
+			&:hover {
+				i {background-position: -120px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-120px -48px;}}
+		}
+		&.--check  {
+			&:after{content:'审核'}
+			i {background-position: -150px -48px;}
+			&:hover {
+				i {background-position: -150px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-150px -48px;}}
+		}
+		&.--configset  {
+			&:after{content:'设置'}
+			i {background-position: -180px -48px;}
+			&:hover {
+				i {background-position: -180px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-180px -48px;}}
+		}
+		&.--bind  {
+			&:after{content:'绑定'}
+			i {background-position: -210px -48px;}
+			&:hover {
+				i {background-position: -210px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-210px -48px;}}
+		}
+		&.--quention  {
+			&:after{content:'疑问'}
+			i {background-position: -240px -48px;}
+			&:hover {
+				i {background-position: -240px -71px;}
+			}
+			&.--unlight{color:$rj-unlight-cl!important; &:hover i {background-position:-240px -48px;}}
+		}
+
+		&:hover{color:$rj-hover-cl!important;}
+		&.--uncontent{&:after{content:''}}
+	}
+}

@@ -1,0 +1,48 @@
+.theme-item {
+	float:left; 
+	cursor:pointer;
+	padding: 10px;
+	position: relative;
+}
+
+.theme-item .bg-color {
+	display: none;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 111;
+	border-radius: 10px;
+}
+
+.theme-item:hover .bg-color{
+	display: block;
+	line-height: 250px;
+	text-align: center;
+}
+
+.theme-icons {
+	margin-top: 10px;
+	width: 400px;
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.theme-icons.icon--00aeff {
+	background: url('./img/00aeff-theme.jpg') 0 0 no-repeat; 
+}
+
+.theme-icons.icon--0090ff {
+	background: url('./img/0090ff-theme.jpg') 0 0 no-repeat; 
+} 
+
+.theme-icons.icon--12c2ab {
+	background: url('./img/12c2ab-theme.jpg') 0 0 no-repeat; 
+}
+
+.theme-icons.icon--232a45 {
+	background: url('./img/232a45-theme.jpg') 0 0 no-repeat; 
+}
