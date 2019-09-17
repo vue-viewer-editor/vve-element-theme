@@ -1,6 +1,6 @@
 {
   "name": "vve-element-theme",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "scripts": {
     "start": "webpack-dev-server --open --mode development --env.NODE_ENV=development",
     "build": "webpack -p --env.NODE_ENV=production",
