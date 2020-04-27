@@ -1,0 +1,45 @@
+.theme-onc-dark {
+  @import './main.scss';
+
+  color: #90AACD;
+
+  .vve-container-main {
+    background:linear-gradient(0deg,#212836,#314358);
+  }
+
+  .vve-onc-block-div {
+    position: relative;
+    background: linear-gradient(0deg, #282d3c, #304054);
+    border-radius: 2px;
+    box-shadow: 6px 0 15px rgba(0,7,30,0.4);
+    border: 1px solid #31526b;
+
+    &::before {
+      background: url(./images/left.png) 0 0 no-repeat;
+      width: 34px;
+      height: 24px;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      background: url(./images/right.png) 0 0 no-repeat;
+      width: 34px;
+      height: 24px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .vve-table-bg-transaprent.el-table {
+    & th {
+      background-color: transparent;
+    }
+    & tbody tr {
+      background-color: transparent;
+    }
+  }
+}

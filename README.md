@@ -61,6 +61,7 @@ npm start
 - 当个主题查看
 ```
 npm start -- --env.SINGLE_ENTRY=element-rj-ivg
+npm start -- --env.SINGLE_ENTRY=element-rj-onc-dark
 ```
 
 - 打包

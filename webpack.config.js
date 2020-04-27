@@ -14,6 +14,7 @@ module.exports = (env = {}) => {
     'element-rj-232a45': path.resolve(__dirname, "src/rj-themes/232a45.js"),
     'element-rj-008376': path.resolve(__dirname, "src/rj-themes/008376.js"),
     'element-rj-639AF4': path.resolve(__dirname, "src/rj-themes/639AF4.js"),
+    'element-rj-onc-dark': path.resolve(__dirname, "src/rj-themes/onc-dark.js"),
     'element-vve-008376': path.resolve(__dirname, "src/element-vve-008376/main.js"),
   }
 

@@ -37,5 +37,8 @@
       "name": "nianqin",
       "url": "https://github.com/nqdy666"
     }
-  ]
+  ],
+  "dependencies": {
+    "element-ui": "^2.13.1"
+  }
 }
