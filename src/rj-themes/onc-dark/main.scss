@@ -102,6 +102,10 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
   }
 }
 
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: rgba(#212836, 0.8)
+}
+
 table {
   color: $--table-font-color;
 }
@@ -149,3 +153,5 @@ table {
 .el-tabs__item:hover,.el-tabs__item.is-active {
   color: $--color-primary;
 }
+
+
