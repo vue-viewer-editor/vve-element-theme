@@ -35,6 +35,7 @@
           <el-tabs value="first">
             <el-tab-pane label="用户管理" name="first">
               <i class="el-icon-plus"></i>
+              <el-button size="small">主要按钮</el-button>
               <el-button type="text" size="small">文本按钮</el-button>
               <el-button type="primary" size="small">主要按钮</el-button>
               <el-button type="default" size="small">默认按钮</el-button>
@@ -86,8 +87,14 @@
             <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
             <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
           </el-tabs>
-          
         </div>
+        <el-steps align-center :active="1">
+          <el-step title="步骤"></el-step>
+          <el-step title="步骤"></el-step>
+          <el-step title="步骤"></el-step>
+        </el-steps>
+        <el-date-picker start-placeholder="开始日期" end-placeholder="结束日期" range-separator="至" type="datetimerange" format="yyyy-MM-dd" size="small"></el-date-picker>
+        <el-tree :data="treeData" node-key="id" :expand-on-click-node="false" :default-expanded-keys='["1-1-1"]' :default-checked-keys='[]' :indent="16" default-expand-all></el-tree>
         <div style="padding: 10px;">
           <el-table class="bg-table vve-table-bg-transaprent"
             :data="tableData" :border="true" stripe>
@@ -214,6 +221,29 @@
             date: '2016-05-03',
             name: '王小虎',
             address: '上海市普陀区金沙江路 1516 弄'
+          }],
+          "treeData": [{
+            "id": "1",
+            "label": "一级 1",
+            "children": [{
+              "id": "1-1",
+              "label": "二级 1-1",
+              "children": [{
+                "id": "1-1-1",
+                "label": "三级 1-1-1"
+              }]
+            }]
+          }, {
+            "id": "2",
+            "label": "一级 2",
+            "children": [{
+              "id": "2-1",
+              "label": "二级 2-1",
+              "children": [{
+                "id": "2-1-1",
+                "label": "三级 2-1-1"
+              }]
+            }]
           }]
         }
       },
