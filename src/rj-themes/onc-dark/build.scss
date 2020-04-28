@@ -144,7 +144,6 @@
   }
 }
 
-
 [class^=el-icon-],
 [class*=" el-icon-"] {
   font-family: "element-icons" !important;
@@ -18641,7 +18640,7 @@
 }
 
 .el-tree-node:focus>.el-tree-node__content {
-  background-color: #f5f7fa
+  background-color: rgba(156, 186, 228, .2)
 }
 
 .el-tree-node.is-drop-inner>.el-tree-node__content .el-tree-node__label {
@@ -18671,7 +18670,7 @@
 }
 
 .el-tree-node__content:hover {
-  background-color: #f5f7fa
+  background-color: rgba(156, 186, 228, .2)
 }
 
 .el-tree.is-dragging .el-tree-node__content {
@@ -31857,7 +31856,7 @@
 }
 
 .el-table--striped .el-table__body tr.el-table__row--striped td {
-  background: rgba(#212836, 0.8)
+  background: rgba(33, 40, 54, .8)
 }
 
 table {
@@ -31898,4 +31897,40 @@ table {
 .el-tabs__item:hover,
 .el-tabs__item.is-active {
   color: #18edd0
+}
+
+.el-tree {
+  background: transparent
+}
+
+.el-tree-node__content:hover {
+  color: #18edd0
+}
+
+.el-tree-node__content:hover>.el-tree-node__expand-icon {
+  color: #18edd0
+}
+
+.el-step__title.is-process {
+  color: rgba(24, 237, 208, .8)
+}
+
+.el-picker-panel {
+  background: #404b60
+}
+
+.el-picker-panel__footer {
+  background: #404b60
+}
+
+.el-date-editor .el-range-separator {
+  color: #90aacd
+}
+
+.el-range-input {
+  background-color: transparent
+}
+
+.el-picker-panel__footer .el-button--default {
+  background: transparent
 }
