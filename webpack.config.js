@@ -14,6 +14,8 @@ module.exports = (env = {}) => {
     'element-rj-232a45': path.resolve(__dirname, "src/rj-themes/232a45.js"),
     'element-rj-008376': path.resolve(__dirname, "src/rj-themes/008376.js"),
     'element-rj-639AF4': path.resolve(__dirname, "src/rj-themes/639AF4.js"),
+    'element-rj-2b6afd': path.resolve(__dirname, "src/rj-themes/2b6afd.js"), // 极光白
+    'element-rj-18edd0': path.resolve(__dirname, "src/rj-themes/18edd0.js"), // 极光黑
     'element-rj-onc-dark': path.resolve(__dirname, "src/rj-themes/onc-dark.js"),
     'element-vve-008376': path.resolve(__dirname, "src/element-vve-008376/main.js"),
   }
