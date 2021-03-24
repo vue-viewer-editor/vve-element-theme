@@ -41,7 +41,7 @@
 
 	$-line: #f0f0f0 !default; //分割线
 
-	$rj-cl-ffffff: #ffffff !default;
+	$rj-cl-ffffff: #5b656b !default;
 
 	//公共属性
 	@include rjCommon($rj-cl-ffffff);
@@ -1023,6 +1023,4 @@
 		box-shadow: 0 0 6px 1px lighten($rj-default-button-fill, 20);
 	}
 }
-body {
-	perspective: 1000px;
-}
+
