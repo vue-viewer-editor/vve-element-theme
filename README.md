@@ -64,6 +64,7 @@ npm start -- --env.SINGLE_ENTRY=element-rj-ivg
 npm start -- --env.SINGLE_ENTRY=element-rj-onc-dark
 npm start -- --env.SINGLE_ENTRY=element-rj-2b6afd
 npm start -- --env.SINGLE_ENTRY=element-rj-18edd0
+npm start -- --env.SINGLE_ENTRY=element-rj-2b6afd-old
 ```
 
 - 打包
