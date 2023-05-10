@@ -4875,8 +4875,8 @@
 }
 
 .theme-2b6afd .el-form-item__content:after,.theme-2b6afd .el-form-item__content:before {
-	display: table;
-	content: ""
+	content: "";
+	line-height: 32px;
 }
 
 .theme-2b6afd .el-form-item__content:after {
@@ -10710,7 +10710,7 @@
 	text-align: center;
 	font-weight: 700;
 	line-height: 1;
-	color: inherit
+	color: white
 }
 
 .theme-2b6afd .el-step__icon-inner[class*=el-icon]:not(.is-status) {
@@ -12547,7 +12547,6 @@
 	position: relative;
 	font-size: 14px;
 	display: inline-block;
-	width: 100%
 }
 
 .theme-2b6afd .el-input::-webkit-scrollbar {
