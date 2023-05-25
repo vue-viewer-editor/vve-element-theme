@@ -99,9 +99,9 @@
     font-weight: 500;
   }
 
-  .el-table__header {
-    margin-top: 10px;
-  }
+  // .el-table__header {
+  //   margin-top: 10px;
+  // }
 
   .el-table .has-gutter {
     margin: 24px;
@@ -141,7 +141,7 @@
 
   .el-table__header-wrapper td,
   .el-table__header-wrapper th {
-    padding: 7px 0 6px;
+    padding: 6px 0;
   }
 
   .el-button--primary:not(.is-disabled):not(.is-disabled) {
